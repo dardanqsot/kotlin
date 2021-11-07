@@ -20,9 +20,25 @@ fun main(){
     newTopic("DataClasses")
     val myUser = User(0,"Darwin", "Quispe", Group.FAMILY.ordinal)
     val bro = myUser.copy(1, "Daniel")
-    val frieno = bro.copy(2, group = Group.FRIEND.ordinal)
+    val friend = bro.copy(2, group = Group.FRIEND.ordinal)
     println(myUser.component3())
     println(myUser)
     println(bro)
-    println(frieno)
+    println(friend)
+
+    newTopic("Fucnioens de Alcance")
+    with(smartphone){
+        println("Privado? $isPrivate")
+        call()
+    }
+
+/*    friend.group = Group.WORK.ordinal
+    friend.name = "Juan"
+    friend.lastName = "Perez"*/
+    friend.apply {
+        group = Group.WORK.ordinal
+        name = "Juan"
+        lastName = "Perez"
+    }
+    println(friend)
 }
