@@ -13,5 +13,5 @@ fun newTopic(topic: String){
     print("=============")
     println()
 */
-    print("\n============= $topic =============\n") //interpolar variables
+    print("\n============= $topic =============\n") //interpolar variables en un string
 }
