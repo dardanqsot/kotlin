@@ -18,10 +18,11 @@ fun main(){
     println("Privado? ${smartphone.isPrivate}")
 
     newTopic("DataClasses")
-    val myUser = User(0,"Darwin", "Quispe", 0)
-
+    val myUser = User(0,"Darwin", "Quispe", Group.FAMILY.ordinal)
+    val bro = myUser.copy(1, "Daniel")
+    val frieno = bro.copy(2, group = Group.FRIEND.ordinal)
     println(myUser.component3())
     println(myUser)
-
-
+    println(bro)
+    println(frieno)
 }
