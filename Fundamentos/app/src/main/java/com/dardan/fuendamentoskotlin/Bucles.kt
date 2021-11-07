@@ -19,7 +19,20 @@ fun showPersons(vararg  persons: String){
     newTopic("WHILE")
     var index = 0
     while (index < persons.size){
+        if (persons[index] == "Mary") println("Es Mary")
         println(persons[index])
         index++
+    }
+
+    newTopic("When")
+    index = (0..persons.size-1).random()  //sintaxis para representar un rango
+    println(index)
+    when(persons[index]){
+        "Angel" -> println("Es Angel")
+        "Mary" -> {
+            println("Ir a otra pantalla")
+            println(2+4)
+        }
+        else -> println(persons[index])
     }
 }
