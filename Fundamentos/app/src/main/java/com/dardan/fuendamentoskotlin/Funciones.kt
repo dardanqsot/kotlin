@@ -2,9 +2,9 @@ package com.dardan.fuendamentoskotlin
 
 import java.lang.Math.abs
 
-fun main(){
+fun main() {
     sayHello()
-
+    contador(5)
     newTopic("Argumentos")
     //println(sum(2,3))
     val a = 2
@@ -39,3 +39,6 @@ fun showProduct(name: String, promo: String = "Sin promoción", validity: String
     println("$name = $promo hasta $validity")
 }
 
+fun contador(cantidad: Int){
+    println("Tengo $cantidad manzanas!")
+}
