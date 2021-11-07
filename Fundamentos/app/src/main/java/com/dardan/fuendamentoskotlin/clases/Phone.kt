@@ -1,12 +1,12 @@
 package com.dardan.fuendamentoskotlin.clases
 
-class Phone(val number: Int) {
+open class Phone(protected val number: Int) { //se usa open para permitir a la clase ser heradada por otras clases
 
     fun call(){
         println("Llamando...")
     }
 
-    fun showNumber(){
+    open fun showNumber(){
         println("Mi número es: $number")
     }
 }
