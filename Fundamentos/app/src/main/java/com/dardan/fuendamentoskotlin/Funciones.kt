@@ -15,6 +15,12 @@ fun main(){
     newTopic("Infix")
     val c = -3
     println(c.enableAbs(false))
+
+    newTopic("Sobrecarga de Métodos")
+    showProduct("Soda", "10%")
+    showProduct("Soda", )
+    showProduct("Caramelo","15%" )
+    showProduct("Jugo",validity = "15 de marzo" ) //se le conoce como argumentos nombrados
 }
 
 private fun sayHello(): Unit {  //Unit = void y el metodo es por defecto void
@@ -28,3 +34,8 @@ fun sum(a: Int, b: Int): Int{
 fun sub(a: Int, b: Int) = a - b
 
 infix fun Int.enableAbs(enable: Boolean) = if(enable) abs(this) else this
+
+fun showProduct(name: String, promo: String = "Sin promoción", validity: String = "agotar existencias"){
+    println("$name = $promo hasta $validity")
+}
+
