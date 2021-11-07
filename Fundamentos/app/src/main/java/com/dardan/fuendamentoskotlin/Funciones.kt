@@ -1,5 +1,7 @@
 package com.dardan.fuendamentoskotlin
 
+import java.lang.Math.abs
+
 fun main(){
     sayHello()
 
@@ -9,6 +11,10 @@ fun main(){
     val b = 3
     println("$a + $b = ${sum(a,b)}")
     println("$a - $b = ${sub(a,b)}")
+
+    newTopic("Infix")
+    val c = -3
+    println(c.enableAbs(false))
 }
 
 private fun sayHello(): Unit {  //Unit = void y el metodo es por defecto void
@@ -20,3 +26,5 @@ fun sum(a: Int, b: Int): Int{
 }
 
 fun sub(a: Int, b: Int) = a - b
+
+infix fun Int.enableAbs(enable: Boolean) = if(enable) abs(this) else this
