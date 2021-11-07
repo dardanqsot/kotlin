@@ -1,5 +1,6 @@
 package com.dardan.fuendamentoskotlin
 
+const val separator = "================" //el uso de const solo puede ser en forma global es decir no se puede usar dentro de funciones
 fun main(){
     //print("Hola Kotlin")
     newTopic("Hola Kotlin")
@@ -27,5 +28,7 @@ fun newTopic(topic: String){
     print("=============")
     println()
 */
-    print("\n============= $topic =============\n") //interpolar variables en un string
+    //print("\n============= $topic =============\n") //interpolar variables en un string
+    print("\n$separator $topic $separator\n")
+
 }
