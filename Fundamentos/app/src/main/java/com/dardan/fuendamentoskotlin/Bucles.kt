@@ -3,7 +3,7 @@ package com.dardan.fuendamentoskotlin
 fun main(){
     newTopic("Bucles")
     showPersons("Angel", "Mary", "Fany")
-    showPersons("Angel", "Mary","Darwin", "Daniel")
+    showPersons("Angel", "Mary","Darwin", "Daniel", "Carla")
 }
 
 fun showPersons(p1: String, p2: String, p3: String){
@@ -13,6 +13,13 @@ fun showPersons(p1: String, p2: String, p3: String){
 }
 
 fun showPersons(vararg  persons: String){
-    println(persons[0])
-    println(persons[1])
+    newTopic("FOR")
+    for(person in persons) println(person)
+
+    newTopic("WHILE")
+    var index = 0
+    while (index < persons.size){
+        println(persons[index])
+        index++
+    }
 }
