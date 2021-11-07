@@ -6,12 +6,17 @@ fun main(){
 
     newTopic("Variables y constantes")
     //val a = 2
-    val a = "Hola"
+    val a = "Hola" //CONTANTE
     println(a)
 
-    var b: Int
+    var b: Int //VARIABLE
     b = 5
     println("b = $b")
+
+    var objNull: Any?
+    //objNull = null
+    objNull = "HI"
+    print(objNull)
 }
 
 fun newTopic(topic: String){
