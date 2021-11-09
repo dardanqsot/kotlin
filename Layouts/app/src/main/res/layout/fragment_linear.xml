@@ -17,10 +17,12 @@
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
         android:text="match_parent"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:background="@android:color/holo_blue_bright"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="wrap_content"/>
+        android:text="wrap_content"
+        android:background="@android:color/holo_blue_dark"/>
 </LinearLayout>
