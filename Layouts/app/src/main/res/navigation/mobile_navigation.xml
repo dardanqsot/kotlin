@@ -7,19 +7,19 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.dardan.layouts.ui.home.HomeFragment"
+        android:name="com.cursosant.android.layouts.ui.home.HomeFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_linear" />
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.dardan.layouts.ui.dashboard.DashboardFragment"
+        android:name="com.cursosant.android.layouts.ui.dashboard.DashboardFragment"
         android:label="@string/title_dashboard"
         tools:layout="@layout/fragment_frame" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.dardan.layouts.ui.notifications.NotificationsFragment"
+        android:name="com.cursosant.android.layouts.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_constraint" />
 </navigation>
